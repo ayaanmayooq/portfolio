@@ -19,3 +19,33 @@
     background-size: 100% 1px;
     background-position: 0 100%
 }
+
+@keyframes moveUpFadeIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-move-up-fade-in {
+    animation: moveUpFadeIn 1s cubic-bezier(.39,0,.47,.99);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
