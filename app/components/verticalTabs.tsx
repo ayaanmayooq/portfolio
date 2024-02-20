@@ -13,7 +13,7 @@ export function VerticalTabs() {
         <div className="container relative flex">
             <div className="tabs flex flex-col">
                 <a
-                    className={`tab px-10 flex-1 py-2 border-l-2 cursor-pointer ${activeTab === 1 ? 'border-l-2 border-gray-500' : ''}`}
+                    className={`tab px-10 flex-1 py-2 border-l-2 cursor-pointer duration-1000 ${activeTab === 1 ? 'border-l-2 border-gray-500 font-bold' : ''}`}
                     href="#"
                     data-tab="1"
                     onClick={() => handleTabClick(1)}
@@ -21,7 +21,7 @@ export function VerticalTabs() {
                     Michigan State University
                 </a>
                 <a
-                    className={`tab px-10 flex-1 py-2 border-l-2 cursor-pointer ${activeTab === 2 ? 'border-l-2 border-gray-500' : ''
+                    className={`tab px-10 flex-1 py-2 border-l-2 cursor-pointer duration-1000 ${activeTab === 2 ? 'border-l-2 border-gray-500 font-bold' : ''
                         }`}
                     href="#"
                     data-tab="2"
@@ -30,7 +30,7 @@ export function VerticalTabs() {
                     Vectorform
                 </a>
                 <a
-                    className={`tab px-10 flex-1 py-2 border-l-2 cursor-pointer ${activeTab === 3 ? 'border-l-2 border-gray-500' : ''
+                    className={`tab px-10 flex-1 py-2 border-l-2 cursor-pointer duration-1000 ${activeTab === 3 ? 'border-l-2 border-gray-500 font-bold' : ''
                         }`}
                     href="#"
                     data-tab="3"
@@ -42,7 +42,7 @@ export function VerticalTabs() {
 
             <div className="flex pl-4">
                 <div
-                    className={`absolute py-2 transition-opacity ${activeTab === 1 ? 'opacity-100 z-10' : 'opacity-0'
+                    className={`absolute py-2 transition-opacity duration-1000 ${activeTab === 1 ? 'opacity-100 z-10' : 'opacity-0'
                         }`}
                     data-tab="1"
                 >
@@ -65,7 +65,7 @@ export function VerticalTabs() {
                 </div>
 
                 <div
-                    className={`absolute py-2 transition-opacity ${activeTab === 2 ? 'opacity-100 z-10' : 'opacity-0'
+                    className={`absolute py-2 transition-opacity duration-1000 ${activeTab === 2 ? 'opacity-100 z-10' : 'opacity-0'
                         }`}
                     data-tab="2"
                 >
@@ -90,7 +90,7 @@ export function VerticalTabs() {
                 </div>
 
                 <div
-                    className={`absolute py-2 transition-opacity ${activeTab === 3 ? 'opacity-100 z-10' : 'opacity-0'
+                    className={`absolute py-2 transition-opacity duration-1000 ${activeTab === 3 ? 'opacity-100 z-10' : 'opacity-0'
                         }`}
                     data-tab="3"
                 >
