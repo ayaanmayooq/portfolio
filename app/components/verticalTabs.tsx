@@ -10,45 +10,47 @@ export function VerticalTabs() {
     };
 
     return (
-        <div className="container relative flex">
-            <div className="tabs flex flex-col">
-                <a
-                    className={`tab px-10 flex-1 py-2 border-l-2 cursor-pointer duration-1000 ${activeTab === 1 ? 'border-l-2 border-gray-500 font-bold' : ''}`}
-                    href="#"
-                    data-tab="1"
-                    onClick={() => handleTabClick(1)}
-                >
-                    Michigan State University
-                </a>
-                <a
-                    className={`tab px-10 flex-1 py-2 border-l-2 cursor-pointer duration-1000 ${activeTab === 2 ? 'border-l-2 border-gray-500 font-bold' : ''
-                        }`}
-                    href="#"
-                    data-tab="2"
-                    onClick={() => handleTabClick(2)}
-                >
-                    Vectorform
-                </a>
-                <a
-                    className={`tab px-10 flex-1 py-2 border-l-2 cursor-pointer duration-1000 ${activeTab === 3 ? 'border-l-2 border-gray-500 font-bold' : ''
-                        }`}
-                    href="#"
-                    data-tab="3"
-                    onClick={() => handleTabClick(3)}
-                >
-                    Roosevelt Innovations
-                </a>
+        <div className="container relative h-fit flex ">
+            <div>
+                <div className=" flex w-min flex-col">
+                    <a
+                        className={`px-10 flex-1 py-2 w-min border-l-2 cursor-pointer whitespace-nowrap duration-1000 ${activeTab === 1 ? 'border-l-2 border-gray-500 font-bold' : ''}`}
+                        href="#"
+                        data-tab="1"
+                        onClick={() => handleTabClick(1)}
+                    >
+                        Michigan State University
+                    </a>
+                    <a
+                        className={` px-10 flex-1 py-2 w-fit border-l-2 cursor-pointer whitespace-nowrap duration-1000 ${activeTab === 2 ? 'border-l-2 border-gray-500 font-bold' : ''
+                            }`}
+                        href="#"
+                        data-tab="2"
+                        onClick={() => handleTabClick(2)}
+                    >
+                        Vectorform
+                    </a>
+                    <a
+                        className={` px-10 flex-1 py-2 w-fit border-l-2 cursor-pointer whitespace-nowrap duration-1000 ${activeTab === 3 ? 'border-l-2 border-gray-500 font-bold' : ''
+                            }`}
+                        href="#"
+                        data-tab="3"
+                        onClick={() => handleTabClick(3)}
+                    >
+                        Roosevelt Innovations
+                    </a>
+                </div>
             </div>
 
-            <div className="flex pl-4">
+            <div className="flex flex-col pl-4">
                 <div
-                    className={`absolute py-2 transition-opacity duration-1000 ${activeTab === 1 ? 'opacity-100 z-10' : 'opacity-0'
+                    className={`h-fit w-fit py-2 transition-opacity duration-1000 ${activeTab === 1 ? ' opacity-100 visible z-10 ' : 'opacity-0 hidden'
                         }`}
                     data-tab="1"
                 >
                     <div>
                         <div className="mb-6">
-                            <h3 className="text-lg font-semibold">Teaching Assitant</h3>
+                            <h3 className="text-lg font-semibold">Teaching Assistant</h3>
                             <p className="text-gray-600">
                                 <a href="https://msu.edu/" target="_blank" className="text-xl font-bold">
                                     <span className="link link-underline link-underline-black text-black">
@@ -65,7 +67,7 @@ export function VerticalTabs() {
                 </div>
 
                 <div
-                    className={`absolute py-2 transition-opacity duration-1000 ${activeTab === 2 ? 'opacity-100 z-10' : 'opacity-0'
+                    className={`py-2 transition-opacity duration-1000 ${activeTab === 2 ? 'visible z-10 opacity-100 ' : 'hidden opacity-0'
                         }`}
                     data-tab="2"
                 >
@@ -90,7 +92,7 @@ export function VerticalTabs() {
                 </div>
 
                 <div
-                    className={`absolute py-2 transition-opacity duration-1000 ${activeTab === 3 ? 'opacity-100 z-10' : 'opacity-0'
+                    className={`py-2 transition-opacity duration-1000 ${activeTab === 3 ? 'visible z-10 opacity-100' : 'hidden opacity-0'
                         }`}
                     data-tab="3"
                 >

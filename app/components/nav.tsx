@@ -5,16 +5,19 @@ import { usePathname } from 'next/navigation';
 
 const navItems = {
     '/': {
-        name: 'about',
-    },
-    '/work': {
-        name: 'work',
+        name: 'home',
     },
     '/projects': {
         name: 'projects',
     },
+    '/work': {
+        name: 'work',
+    },
     '/contact': {
         name: 'contact',
+    },
+    '/resume': {
+        name: 'resume',
     },
 };
 
