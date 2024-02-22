@@ -1,6 +1,7 @@
 "use client"
 import { VerticalTabs } from '@/app/components/verticalTabs';
 import { ExperienceCard } from '@/app/components/experienceCard';
+import { TextEncrypted } from '@/app/components/encryptText';
 import data from '@/public/data.json'
 
 export default function Page() {
@@ -9,8 +10,9 @@ export default function Page() {
         
         <section className="animate-move-up-fade-in">
             <p>Hi, my name is</p>
-            <div className="py-1">
-                <p className=" text-4xl font-bold">Ayaan Mayooq</p>
+            <div className="py-1  text-4xl font-bold">
+                <TextEncrypted text="Ayaan Mayooq" />
+                {/*<p className=" text-4xl font-bold">Ayaan Mayooq</p>*/}
             </div>
             <p>Senior year student at&nbsp;
                 <a href="https://msu.edu/" className="link link-underline link-underline-black text-[#18453B] text-xl font-bold">Michigan State University</a>
