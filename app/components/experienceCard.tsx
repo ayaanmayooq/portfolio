@@ -1,4 +1,4 @@
-
+import { RevealOnScroll } from '@/app/components/effects';
 
 interface ExperienceCardProps {
   title: string;
@@ -10,7 +10,8 @@ interface ExperienceCardProps {
 }
 
 export function ExperienceCard(cardData: ExperienceCardProps) {
-  return (
+    return (
+      <RevealOnScroll>
     <div className='mt-2 p-1'>
       <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 ">
         <div className="ml-2 mb-6">
@@ -38,6 +39,7 @@ export function ExperienceCard(cardData: ExperienceCardProps) {
           )}
         </div>
       </div>
-    </div>
+            </div>
+        </RevealOnScroll>
   );
 }

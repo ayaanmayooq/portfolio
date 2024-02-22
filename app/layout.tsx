@@ -37,7 +37,8 @@ export default function RootLayout({
 
                     <div className="m-auto"></div>
 
-                    <div className="flex justify-center">
+                    <div className="flex flex-col justify-center">
+                        <hr className="mt-20 w-full border-3" />
                         <Footer />
                     </div>
                 </main>

@@ -9,6 +9,7 @@ export default function Page() {
     return (
         
         <section className="animate-move-up-fade-in">
+            
             <p>Hi, my name is</p>
             <div className="py-1  text-4xl font-bold">
                 <TextEncrypted text="Ayaan Mayooq" />
@@ -23,7 +24,7 @@ export default function Page() {
                 {data['experiences'].map((experience, index) => (
                     <ExperienceCard key={index} {...experience} />
                 ))}
-
+                
         </section>
         
     );
