@@ -19,7 +19,7 @@ const images = [
 ];
 export default function Page() {
     return (
-        <div className=" columns-3 gap-8 space-y-8 mb-4">
+        <div className=" columns-3 gap-8 space-y-8 mb-4 animate-move-up-fade-in">
             {images.map((imageUrl: string, index: number) => (
                 <div key={index} className="h-auto max-w-full">
                     {/*<img src={imageUrl} className=" rounded-lg" alt={`Image ${index + 1}`} />*/}

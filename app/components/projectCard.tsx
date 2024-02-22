@@ -53,7 +53,7 @@ export const ProjCard = ({ imageUrl, index }: { imageUrl: string; index: number 
                     transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
                 }}
             >
-                <div className="pulse absolute -inset-2 rounded-lg bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 opacity-75 blur-xl" />
+                <div className="pulse absolute -inset-2 rounded-lg bg-gradient-to-r from-gray-300 via-gray-300 to-gray-300 opacity-75 blur-xl" />
                 <div className="relative flex h-full w-full select-none items-center justify-center rounded-lg overflow-hidden">
                     <img
                         src={imageUrl}
