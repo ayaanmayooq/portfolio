@@ -28,17 +28,24 @@ export function Navbar() {
                     <div className="flex flex-row space-x-0 pl-10 ml-auto">
                         {Object.entries(navItems).map(([path, { name }]) => {
                             return (
-                                <Link
+                                <span
                                     key={path}
-                                    href={path}
                                     className={`transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative 
-                                    py-1 px-2 ${pathname === path ? 'font-bold' : ''
-                                        }`}
+                                    py-1 px-2 ${pathname === path ? 'font-bold' : ''}`}
                                 >
-                                    {name}
-                                </Link>
+                                    {name == 'resume' ? (
+                                        <a href={path} target="_blank" rel="noopener noreferrer">
+                                            {name}
+                                        </a>
+                                    ) : (
+                                        <Link href={path}>
+                                            {name}
+                                        </Link>
+                                    )}
+                                </span>
                             );
                         })}
+
                     </div>
                 </nav>
             </div>
