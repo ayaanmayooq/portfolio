@@ -1,3 +1,6 @@
+"use client"
+
+import Link from 'next/link';
 import '../global.css'
 import type { Metadata } from 'next';
 import Head from 'next/head';
@@ -6,13 +9,15 @@ import { GeistMono } from 'geist/font/mono';
 import { Navbar } from '@/app/components/nav'
 import { Footer } from '@/app/components/footer';
 import { ProjItem } from '@/app/components/projectItem';
+import { usePathname } from 'next/navigation';
 
 
 export default function RootLayout({
     children,
 }: {
     children: React.ReactNode
-}) {
+    }) {
+    const pathname = usePathname();
     return (
         <html lang="en"
             className={`${GeistSans.className} text-black bg-white dark:text-white dark:bg-[#111010]`}>
