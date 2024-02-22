@@ -17,7 +17,15 @@ function throttle<T extends (...args: any[]) => any>(
     };
 }
 
-export const ProjCard = ({ imageUrl, index }: { imageUrl: string; index: number }) => {
+interface Project {
+    imageUrl: string;
+    title: string;
+    description: string;
+    technologies: string[];
+    // Add any other properties as needed
+}
+
+export function ProjCard(project: Project) {
     const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
     const onMouseMove = useCallback(
@@ -28,8 +36,8 @@ export const ProjCard = ({ imageUrl, index }: { imageUrl: string; index: number 
             const y = e.clientY - box.top;
             const centerX = box.width / 2;
             const centerY = box.height / 2;
-            const rotateX = (y - centerY) / 7;
-            const rotateY = (centerX - x) / 7;
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
 
             setRotate({ x: rotateX, y: rotateY });
         }, 100),
@@ -53,13 +61,17 @@ export const ProjCard = ({ imageUrl, index }: { imageUrl: string; index: number 
                     transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
                 }}
             >
-                <div className="pulse absolute -inset-2 rounded-lg bg-gradient-to-r from-gray-300 via-gray-300 to-gray-300 opacity-75 blur-xl" />
-                <div className="relative flex h-full w-full select-none items-center justify-center rounded-lg overflow-hidden">
+                <div className="pulse absolute -inset-2 rounded-lg bg-gradient-to-r from-gray-400 via-gray-400 to-gray-400 opacity-75 blur-xl" />
+                <div className="relative flex flex-col h-full w-full select-none items-center justify-center rounded-lg overflow-hidden">
                     <img
-                        src={imageUrl}
-                        className="rounded-lg object-cover w-full h-full"
-                        alt={`Image ${index + 1}`}
+                        src={project.imageUrl}
+                        className="rounded-t-lg object-cover w-full h-3/4"
+                        alt={`Image ${project.title}`}
                     />
+                    <div className="bg-white dark:bg-[#111010] p-4 w-full h-1/4 rounded-b-lg border-1 border-black border-t">
+                        <h2 className="text-xl font-bold mb-2">{project.title}</h2>
+                        <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
+                    </div>
                 </div>
             </div>
 

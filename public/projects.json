@@ -1,0 +1,60 @@
+[
+  {
+    "imageUrl": "/exaimination.png",
+    "title": "exAImination",
+    "slug": "exaimination",
+    "description": "Elevate Your Learning: AI-Powered Test Generator for Text",
+    "technologies": [ "Tech 1", "Tech 2", "Tech 3" ]
+  },
+  {
+    "imageUrl": "/chrome-dino.png",
+    "title": "DinoAI",
+    "slug": "dinoai",
+    "description": "Reinforcement learning agent for the chrome dino game.",
+    "technologies": [ "Tech A", "Tech B", "Tech C" ]
+  },
+  {
+    "imageUrl": "/img-class.png",
+    "title": "CNN Image Classification",
+    "slug": "cnn",
+    "description": "CUDA accelerated CNN training for image classification on ",
+    "technologies": [ "Tech X", "Tech Y", "Tech Z" ]
+  },
+  {
+    "imageUrl": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
+    "title": "Project 4",
+    "description": "This is the description of Project 4.",
+    "technologies": [ "Tech Alpha", "Tech Beta", "Tech Gamma" ]
+  },
+  {
+    "imageUrl": "/stitching.png",
+    "title": "Panorama Stitching",
+    "slug": "panorama",
+    "description": "Custom Python library to perform convolution, edge detection, corner and blob detection, and feature matching.",
+    "technologies": [ "Tech Delta", "Tech Epsilon", "Tech Zeta" ]
+  },
+  {
+    "imageUrl": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg",
+    "title": "Project 6",
+    "description": "This is the description of Project 6.",
+    "technologies": [ "Tech One", "Tech Two", "Tech Three" ]
+  },
+  {
+    "imageUrl": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg",
+    "title": "Project 10",
+    "description": "This is the description of Project 10.",
+    "technologies": [ "Tech Delta", "Tech Epsilon", "Tech Zeta" ]
+  },
+  {
+    "imageUrl": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg",
+    "title": "Project 11",
+    "description": "This is the description of Project 11.",
+    "technologies": [ "Tech One", "Tech Two", "Tech Three" ]
+  },
+  {
+    "imageUrl": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg",
+    "title": "Project 12",
+    "description": "This is the description of Project 12.",
+    "technologies": [ "Tech A", "Tech B", "Tech C" ]
+  }
+]
