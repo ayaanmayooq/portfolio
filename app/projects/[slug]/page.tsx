@@ -35,7 +35,7 @@ export default function Page({
     }
 
     return (
-        <div className="relative top-0 left-0 p-4">
+        <div className="relative top-0 left-0 p-4 animate-move-up-fade-in">
             <button onClick={handleGoBack} type="button" className="text-gray-700 hover:text-black font-large rounded-full text-sm  text-center inline-flex items-center ">
                 <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1M5 9l-4-4 4-4" />
