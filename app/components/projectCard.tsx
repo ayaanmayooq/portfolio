@@ -62,7 +62,7 @@ export function ProjCard(project: Project) {
                 }}
             >
                 <div className="pulse absolute -inset-2 rounded-lg bg-gradient-to-r from-gray-400 via-gray-400 to-gray-400 opacity-75 blur-xl" />
-                <div className="relative flex flex-col h-full w-full select-none items-center justify-center rounded-lg overflow-hidden">
+                <div className="relative flex flex-col h-full w-full select-none items-center justify-center rounded-lg overflow-hidden duration-500 hover:scale-105">
                     <img
                         src={project.imageUrl}
                         className="rounded-t-lg object-cover w-full h-3/4"

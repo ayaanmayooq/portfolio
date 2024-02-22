@@ -10,51 +10,49 @@
     "imageUrl": "/chrome-dino.png",
     "title": "DinoAI",
     "slug": "dinoai",
-    "description": "Reinforcement learning agent for the chrome dino game.",
+    "description": "Reinforcement learning agent for the chrome dino game",
+    "technologies": [ "Tech A", "Tech B", "Tech C" ]
+  },
+  {
+    "imageUrl": "/robinhood.jpeg",
+    "title": "Robinhood Trading Bot",
+    "slug": "dinoai",
+    "description": "Automated real-time stock trading on robinhood",
+    "technologies": [ "Tech A", "Tech B", "Tech C" ]
+  },
+  {
+    "imageUrl": "/flexvr.png",
+    "title": "Flexible VR Training",
+    "slug": "flexvrtraining",
+    "description": "VR application that provided a safe and innovative virtual training space, revolutionizing AI-enhanced training",
     "technologies": [ "Tech A", "Tech B", "Tech C" ]
   },
   {
     "imageUrl": "/img-class.png",
     "title": "CNN Image Classification",
     "slug": "cnn",
-    "description": "CUDA accelerated CNN training for image classification on ",
+    "description": "CUDA accelerated CNN training for image classification",
     "technologies": [ "Tech X", "Tech Y", "Tech Z" ]
   },
   {
-    "imageUrl": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
-    "title": "Project 4",
-    "description": "This is the description of Project 4.",
+    "imageUrl": "/customnn.png",
+    "title": "Neural Network from Scratch",
+    "slug": "customnn",
+    "description": "Custom neural network featuring custom-made ReLU, softmax classification, linear, and L2 loss layers for CIFAR-10 image classification",
     "technologies": [ "Tech Alpha", "Tech Beta", "Tech Gamma" ]
   },
   {
     "imageUrl": "/stitching.png",
     "title": "Panorama Stitching",
     "slug": "panorama",
-    "description": "Custom Python library to perform convolution, edge detection, corner and blob detection, and feature matching.",
+    "description": "Custom Python library to perform convolution, edge detection, corner and blob detection, and feature matching",
     "technologies": [ "Tech Delta", "Tech Epsilon", "Tech Zeta" ]
   },
   {
-    "imageUrl": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg",
-    "title": "Project 6",
-    "description": "This is the description of Project 6.",
+    "imageUrl": "/fakenews.jpg",
+    "title": "Fake News Detection",
+    "slug": "fakenews",
+    "description": "Using machine learning comcepts to devise the best binary classification model for the task",
     "technologies": [ "Tech One", "Tech Two", "Tech Three" ]
-  },
-  {
-    "imageUrl": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg",
-    "title": "Project 10",
-    "description": "This is the description of Project 10.",
-    "technologies": [ "Tech Delta", "Tech Epsilon", "Tech Zeta" ]
-  },
-  {
-    "imageUrl": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg",
-    "title": "Project 11",
-    "description": "This is the description of Project 11.",
-    "technologies": [ "Tech One", "Tech Two", "Tech Three" ]
-  },
-  {
-    "imageUrl": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg",
-    "title": "Project 12",
-    "description": "This is the description of Project 12.",
-    "technologies": [ "Tech A", "Tech B", "Tech C" ]
   }
 ]
