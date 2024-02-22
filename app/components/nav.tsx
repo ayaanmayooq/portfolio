@@ -10,13 +10,7 @@ const navItems = {
     '/projects': {
         name: 'projects',
     },
-    '/work': {
-        name: 'work',
-    },
-    '/contact': {
-        name: 'contact',
-    },
-    '/resume': {
+    '/resume.pdf': {
         name: 'resume',
     },
 };
