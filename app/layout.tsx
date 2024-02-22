@@ -8,7 +8,6 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { Navbar } from '@/app/components/nav'
 import { Footer } from '@/app/components/footer';
-import { ProjItem } from '@/app/components/projectItem';
 import { usePathname } from 'next/navigation';
 
 
