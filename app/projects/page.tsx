@@ -1,5 +1,7 @@
+"use client"
+
 import { GeistSans } from 'geist/font/sans';
-import { ProjItem } from '@/app/components/projectItem';
+import { ProjCard } from '@/app/components/projectCard';
 
 const images = [
     'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg',
@@ -17,12 +19,15 @@ const images = [
 ];
 export default function Page() {
     return (
-        <div className=" columns-3 gap-8 space-y-8">
-            {images.map((imageUrl, index) => (
+        <div className=" columns-3 gap-8 space-y-8 mb-4">
+            {images.map((imageUrl: string, index: number) => (
                 <div key={index} className="h-auto max-w-full">
-                    <img src={imageUrl} className=" rounded-lg" alt={`Image ${index + 1}`} />
+                    {/*<img src={imageUrl} className=" rounded-lg" alt={`Image ${index + 1}`} />*/}
+                    <ProjCard key={index} imageUrl={imageUrl} index={index} />
                 </div>
             ))}
+            {/*<ProjCard imageUrl={imageUrl} index={index} />*/}
         </div>
+        
     );
 }
