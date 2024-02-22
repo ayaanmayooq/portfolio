@@ -54,5 +54,19 @@
     "slug": "fakenews",
     "description": "Using machine learning comcepts to devise the best binary classification model for the task",
     "technologies": [ "Tech One", "Tech Two", "Tech Three" ]
+  },
+  {
+    "imageUrl": "/placeholder.jpg",
+    "title": "Animation using OOP in C++",
+    "slug": "cppanimation",
+    "description": "Using machine learning comcepts to devise the best binary classification model for the task",
+    "technologies": [ "Tech One", "Tech Two", "Tech Three" ]
+  },
+  {
+    "imageUrl": "/placeholder.jpg",
+    "title": "Spongebob Shooting Game",
+    "slug": "spongebobshooting",
+    "description": "Using machine learning comcepts to devise the best binary classification model for the task",
+    "technologies": [ "Tech One", "Tech Two", "Tech Three" ]
   }
 ]
