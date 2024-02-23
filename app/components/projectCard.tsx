@@ -1,6 +1,7 @@
 //https://www.julienthibeaut.xyz/blog/create-tilt-effect-with-react
 
 import { useState, MouseEvent, useCallback } from "react";
+import { Project } from "@/app/models/project";
 
 function throttle<T extends (...args: any[]) => any>(
     func: T,
@@ -15,14 +16,6 @@ function throttle<T extends (...args: any[]) => any>(
         lastCall = now;
         return func(...args);
     };
-}
-
-interface Project {
-    imageUrl: string;
-    title: string;
-    description: string;
-    technologies: string[];
-    // Add any other properties as needed
 }
 
 export function ProjCard(project: Project) {
@@ -70,7 +63,7 @@ export function ProjCard(project: Project) {
                     />
                     <div className="bg-white dark:bg-[#111010] p-4 w-full h-1/4 rounded-b-lg border-1 border-black border-t">
                         <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-                        <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
+                        <p className="text-gray-700 text-sm dark:text-gray-400">{project.description}</p>
                     </div>
                 </div>
             </div>

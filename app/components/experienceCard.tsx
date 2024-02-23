@@ -1,15 +1,7 @@
 import { RevealOnScroll } from '@/app/components/effects';
+import { Experience } from '@/app/models/experience';
 
-interface ExperienceCardProps {
-  title: string;
-  organization: string;
-  organizationLink: string;
-  date: string;
-  points: string[];
-  skills: string[];
-}
-
-export function ExperienceCard(cardData: ExperienceCardProps) {
+export function ExperienceCard(cardData: Experience) {
     return (
       <RevealOnScroll>
     <div className='mt-2 p-1'>

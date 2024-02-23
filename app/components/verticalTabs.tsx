@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { GeistSans } from 'geist/font/sans';
 import "../../global.css"
+import { Experience } from '@/app/models/experience';
+import data from '@/public/data.json'
 
 export function VerticalTabs() {
     const [activeTab, setActiveTab] = useState(1);
@@ -9,113 +11,60 @@ export function VerticalTabs() {
         setActiveTab(tabNumber);
     };
 
+    const experiences = data.experiences;
+
     return (
-        <div className="container relative h-fit flex ">
-            <div>
-                <div className=" flex w-min flex-col">
-                    <a
-                        className={`px-10 flex-1 py-2 w-min border-l-2 cursor-pointer whitespace-nowrap duration-1000 ${activeTab === 1 ? 'border-l-2 border-gray-500 font-bold' : ''}`}
-                        href="#"
-                        data-tab="1"
-                        onClick={() => handleTabClick(1)}
-                    >
-                        Michigan State University
-                    </a>
-                    <a
-                        className={` px-10 flex-1 py-2 w-fit border-l-2 cursor-pointer whitespace-nowrap duration-1000 ${activeTab === 2 ? 'border-l-2 border-gray-500 font-bold' : ''
-                            }`}
-                        href="#"
-                        data-tab="2"
-                        onClick={() => handleTabClick(2)}
-                    >
-                        Vectorform
-                    </a>
-                    <a
-                        className={` px-10 flex-1 py-2 w-fit border-l-2 cursor-pointer whitespace-nowrap duration-1000 ${activeTab === 3 ? 'border-l-2 border-gray-500 font-bold' : ''
-                            }`}
-                        href="#"
-                        data-tab="3"
-                        onClick={() => handleTabClick(3)}
-                    >
-                        Roosevelt Innovations
-                    </a>
-                </div>
-            </div>
-
-            <div className="flex flex-col pl-4">
-                <div
-                    className={`h-fit w-fit py-2 transition-opacity duration-1000 ${activeTab === 1 ? ' opacity-100 visible z-10 ' : 'opacity-0 hidden'
-                        }`}
-                    data-tab="1"
-                >
-                    <div>
-                        <div className="mb-6">
-                            <h3 className="text-lg font-semibold">Teaching Assistant</h3>
-                            <p className="text-gray-600">
-                                <a href="https://msu.edu/" target="_blank" className="text-xl font-bold">
-                                    <span className="link link-underline link-underline-black text-black">
-                                        MSU
-                                    </span>
-                                </a> | Aug 2022 - Present</p>
-                            <ul className="list-disc pl-6 mt-2">
-                                <li>Courses: Computer Vision, Computer Networks, Matrix Algebra with Computational Applications.</li>
-                                <li>Guided academic success of students by conducting one-on-one mentorship sessions and collaborated with professors and
-                                    TAs to enhance the course experience.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    className={`py-2 transition-opacity duration-1000 ${activeTab === 2 ? 'visible z-10 opacity-100 ' : 'hidden opacity-0'
-                        }`}
-                    data-tab="2"
-                >
-                    <div>
-                        <div className="mb-6">
-                            <h3 className="text-lg font-semibold">MSU Capstone Software Developer</h3>
-                            <p className="text-gray-600">
-                                <a href="https://www.vectorform.com/" target="_blank" className="text-xl font-bold">
-                                    <span className="link link-underline link-underline-black text-black">
-                                        Vectorform
-                                    </span>
-                                </a> | Jan 2023 - May 2023</p>
-                            <ul className="list-disc pl-6 mt-2">
-                                <li>Developed a Unity-based VR application that provides an innovative virtual training space for AI-enhanced training.</li>
-                                <li>Fine-tuned GPT-3 Davinci via Python on 300 conversations and optimized token utilization for context-driven responses,
-                                    resulting in savings of 1000 tokens per conversation and a 4-second improvement in response times.</li>
-                                <li>Engineered a web application for training replay utilizing Angular, Node.js, and Azure SQL and blob storage.</li>
-                                <li>Integrated an embedded interactable WebGL build of a free-cam training replay system.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    className={`py-2 transition-opacity duration-1000 ${activeTab === 3 ? 'visible z-10 opacity-100' : 'hidden opacity-0'
-                        }`}
-                    data-tab="3"
-                >
-                    <div>
-                        <div className="mb-6">
-                            <h3 className="text-lg font-semibold">Software Developer Intern</h3>
-                            <p className="text-gray-600">
-                                <a href="https://rooseveltinnovations.com/" target="_blank" className="text-xl font-bold leading-tight">
-                                    <span className="link link-underline link-underline-black text-black">
-                                        Roosevelt Innovations
-                                    </span>
-                                </a> | May 2022 - Aug 2022</p>
-                            <ul className="list-disc pl-6 mt-2">
-                                <li>Implemented an enterprise-level feature (using MEAN stack REST, JSON, Kafka, and containerization) that leverages
-                                    clientspecific information and quotes to accurately recommend insurance packages.</li>
-                                <li>Collaborated closely with underwriting and claims analysis experts to gain insights into claims handling processes.</li>
-                                <li>Utilized concepts of Machine Learning, AI, NLP, word embeddings, and Word2Vec to generate 94% of existing business
-                                    insurance rules with 99% precision.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div className="container relative h-fit flex">
+      <div>
+        <div className="flex w-min flex-col">
+          {experiences.map((experience, index) => (
+            <button
+              key={index}
+              className={`px-10 flex-1 py-2 w-min border-l-2 cursor-pointer whitespace-nowrap duration-1000 ${activeTab === index ? 'border-l-2 border-gray-500 font-bold' : ''}`}
+              onClick={() => handleTabClick(index)}
+            >
+              {experience.organization}
+            </button>
+          ))}
         </div>
+      </div>
+
+      <div className="flex flex-col pl-4">
+        {experiences.map((experience, index) => (
+          <div
+            key={index}
+            className={`transition-opacity duration-1000 ${activeTab === index ? 'opacity-100  z-10 ' : 'opacity-0 '
+              }`}
+          >
+            <div className={`py-2 ${activeTab === index ? 'visible' : 'hidden '}`}>
+              <div className="mb-6">
+                <h3 className="text-lg font-semibold">{experience.title}</h3>
+                <p className="text-gray-600">
+                  <a href={experience.organizationLink} target="_blank" className="text-xl font-bold">
+                    <span className="link link-underline link-underline-black text-black">
+                      {experience.organization}
+                    </span>
+                  </a> | {experience.date}
+                </p>
+                <ul className="list-disc pl-6 mt-2">
+                  {experience.points.map((point, pointIndex) => (
+                    <li key={pointIndex}>{point}</li>
+                  ))}
+                </ul>
+                {experience.skills && experience.skills.length > 0 && (
+                    <div className='flex flex-wrap ml-2 mt-4  space-y-1'>
+                    {experience.skills.map((skill, index) => (
+                        <p key={index} className="mt-1 items-center mx-1 px-3 py-1 text-sm text-center border border-black rounded-2xl">
+                        {skill}
+                        </p>
+                    ))}
+                    </div>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      </div>
     );
 }

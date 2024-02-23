@@ -24,6 +24,8 @@ export default function Page() {
                 {data['experiences'].map((experience, index) => (
                     <ExperienceCard key={index} {...experience} />
                 ))}
+
+                <VerticalTabs></VerticalTabs>
                 
         </section>
         
