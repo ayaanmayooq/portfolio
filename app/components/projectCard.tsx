@@ -70,7 +70,7 @@ export function ProjCard(project: Project) {
                     />
                     <div className="bg-white dark:bg-[#111010] p-4 w-full h-1/4 rounded-b-lg border-1 border-black border-t">
                         <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-                        <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
+                        <p className="text-sm text-gray-800 dark:text-gray-400">{project.description}</p>
                     </div>
                 </div>
             </div>
