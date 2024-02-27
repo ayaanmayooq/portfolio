@@ -1,4 +1,5 @@
 "use client"
+import { LightDarkToggle } from './lightDarkToggle';
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -45,7 +46,7 @@ export function Navbar() {
                                 </span>
                             );
                         })}
-
+                        <LightDarkToggle/>
                     </div>
                 </nav>
             </div>

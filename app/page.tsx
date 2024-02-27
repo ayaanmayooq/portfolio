@@ -17,7 +17,7 @@ export default function Page() {
                 </div>
             
                 <p>Senior year student at&nbsp;
-                    <a href="https://msu.edu/" className="link link-underline link-underline-black text-[#18453B] text-xl font-bold">Michigan State University</a>
+                    <a href="https://msu.edu/" target="_blank" className="link link-underline link-underline-black text-[#18453B] text-xl font-bold">Michigan State University</a>
                     &nbsp;pursuing BS/MS in Computer Science.</p>
                 <p>Always looking for opportunites to put my knowledge and skills to practical use.</p>
             </div>
@@ -29,7 +29,7 @@ export default function Page() {
                     <ExperienceCard key={index} {...experience} />
                 ))}
 
-                <VerticalTabs></VerticalTabs>                
+                {/* <VerticalTabs></VerticalTabs>*/}
         </section>
         
     );

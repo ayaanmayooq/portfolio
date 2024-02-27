@@ -20,7 +20,7 @@ export function VerticalTabs() {
           {experiences.map((experience, index) => (
             <button
               key={index}
-              className={`px-10 flex-1 py-2 w-min border-l-2 cursor-pointer whitespace-nowrap duration-1000 ${activeTab === index ? 'border-l-2 border-gray-500 font-bold' : ''}`}
+              className={`px-10 flex-1 py-2 w-min border-l-2 cursor-pointer whitespace-nowrap duration-1000 ${activeTab === index ? 'border-l-2 border-gray-500 dark:border-gray-100 font-bold' : 'border-gray-200 dark:border-gray-600'}`}
               onClick={() => handleTabClick(index)}
             >
               {experience.organization}
@@ -39,9 +39,9 @@ export function VerticalTabs() {
             <div className={`py-2 ${activeTab === index ? 'visible' : 'hidden '}`}>
               <div className="mb-6">
                 <h3 className="text-lg font-semibold">{experience.title}</h3>
-                <p className="text-gray-600">
+                <p className="dark:text-gray-400 text-gray-600">
                   <a href={experience.organizationLink} target="_blank" className="text-xl font-bold">
-                    <span className="link link-underline link-underline-black text-black">
+                    <span className="link link-underline link-underline-black">
                       {experience.organization}
                     </span>
                   </a> | {experience.date}
