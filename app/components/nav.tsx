@@ -31,8 +31,8 @@ export function Navbar() {
                             return (
                                 <span
                                     key={path}
-                                    className={`transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative 
-                                    py-1 px-2 ${pathname === path ? 'font-bold' : ''}`}
+                                    className={`transition-all text-black dark:text-white hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative 
+                                    py-1 px-2 duration-500 ${pathname === path ? 'font-bold' : ''}`}
                                 >
                                     {name == 'resume' ? (
                                         <a href={path} target="_blank" rel="noopener noreferrer">

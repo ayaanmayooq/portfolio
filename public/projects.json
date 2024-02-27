@@ -4,69 +4,89 @@
     "title": "exAImination",
     "slug": "exaimination",
     "description": "Elevate Your Learning: AI-Powered Test Generator for Text",
-    "technologies": [ "Tech 1", "Tech 2", "Tech 3" ]
+    "technologies": [ "Next.js", "Node", "Tailwind CSS", "OpenAI", "Git" ],
+    "githubLink": "https://github.com/ayaanmayooq/eduhack",
+    "content": ""
   },
   {
     "imageUrl": "/chrome-dino.png",
     "title": "DinoAI",
     "slug": "dinoai",
     "description": "Reinforcement learning agent for the chrome dino game",
-    "technologies": [ "Tech A", "Tech B", "Tech C" ]
+    "technologies": [ "Reinforcement Learning", "OpenAI Gym", "PyTorch" ],
+    "githubLink": "https://github.com/ayaanmayooq/RLTut",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, elit vitae ultrices vulputate, ipsum libero lacinia nulla, vel imperdiet nisl tellus non mauris. Vivamus facilisis, massa eu vulputate feugiat, quam dolor convallis purus, sit amet malesuada nisl libero vitae sapien.\n\nDuis auctor metus nec dui ullamcorper, et hendrerit odio cursus. Nullam eu ex vel leo vulputate auctor nec id metus. Nulla facilisi. Vestibulum bibendum dui in nulla vestibulum fringilla. Nam auctor sapien sit amet tortor venenatis volutpat. \n\nSuspendisse nec odio luctus, posuere dui id, ullamcorper ipsum. Curabitur at mauris at sem dapibus iaculis. Nulla ut aliquet neque. Fusce vitae efficitur risus. Pellentesque tristique, justo nec congue vestibulum, urna turpis venenatis quam, eu scelerisque lacus dui sit amet turpis.\n\nCras sit amet nisi nec leo dictum pharetra a vel nisi. Sed a dolor vitae odio pellentesque aliquam. In hac habitasse platea dictumst. Maecenas cursus, nunc in egestas vulputate, elit tortor tristique urna, vel vulputate turpis elit id lectus."
   },
   {
     "imageUrl": "/robinhood.jpeg",
     "title": "Robinhood Trading Bot",
     "slug": "dinoai",
     "description": "Automated real-time stock trading on robinhood",
-    "technologies": [ "Tech A", "Tech B", "Tech C" ]
+    "technologies": [ "Python", "Robinhood API", "Automation" ],
+    "githubLink": "https://github.com/ayaanmayooq/autostocks",
+    "content": ""
   },
   {
     "imageUrl": "/flexvr.png",
     "title": "Flexible VR Training",
     "slug": "flexvrtraining",
     "description": "VR application that provided a safe and innovative virtual training space, revolutionizing AI-enhanced training",
-    "technologies": [ "Tech A", "Tech B", "Tech C" ]
+    "technologies": [ "Unity", "Angular", "Node.js", "Azure", "WebGL", "Meta Quest", "OpenAI" ],
+    "githubLink": "",
+    "content": ""
   },
   {
     "imageUrl": "/img-class.png",
     "title": "CNN Image Classification",
     "slug": "cnn",
     "description": "CUDA accelerated CNN training for image classification",
-    "technologies": [ "Tech X", "Tech Y", "Tech Z" ]
+    "technologies": [ "CUDA", "PyTorch", "OpenCV" ],
+    "githubLink": "",
+    "content": ""
   },
   {
     "imageUrl": "/customnn.png",
     "title": "Neural Network from Scratch",
     "slug": "customnn",
     "description": "Custom neural network featuring custom-made ReLU, softmax classification, linear, and L2 loss layers for CIFAR-10 image classification",
-    "technologies": [ "Tech Alpha", "Tech Beta", "Tech Gamma" ]
+    "technologies": [ ],
+    "githubLink": "",
+    "content": ""
   },
   {
     "imageUrl": "/stitching.png",
     "title": "Panorama Stitching",
     "slug": "panorama",
     "description": "Custom Python library to perform convolution, edge detection, corner and blob detection, and feature matching",
-    "technologies": [ "Tech Delta", "Tech Epsilon", "Tech Zeta" ]
+    "technologies": [  ],
+    "githubLink": "",
+    "content": ""
   },
   {
     "imageUrl": "/fakenews.jpg",
     "title": "Fake News Detection",
     "slug": "fakenews",
     "description": "Using machine learning comcepts to devise the best binary classification model for the task",
-    "technologies": [ "Tech One", "Tech Two", "Tech Three" ]
+    "technologies": [  ],
+    "githubLink": "",
+    "content": ""
   },
   {
     "imageUrl": "/placeholder.jpg",
     "title": "Animation using OOP in C++",
     "slug": "cppanimation",
     "description": "Using machine learning comcepts to devise the best binary classification model for the task",
-    "technologies": [ "Tech One", "Tech Two", "Tech Three" ]
+    "technologies": [  ],
+    "githubLink": "",
+    "content": ""
   },
   {
     "imageUrl": "/placeholder.jpg",
     "title": "Spongebob Shooting Game",
     "slug": "spongebobshooting",
     "description": "Using machine learning comcepts to devise the best binary classification model for the task",
-    "technologies": [ "Tech One", "Tech Two", "Tech Three" ]
+    "technologies": [  ],
+    "githubLink": "",
+    "content": ""
   }
 ]
