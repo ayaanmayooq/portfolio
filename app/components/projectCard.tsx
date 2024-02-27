@@ -61,9 +61,9 @@ export function ProjCard(project: Project) {
                         className="rounded-t-lg object-cover w-full h-3/4"
                         alt={`Image ${project.title}`}
                     />
-                    <div className="bg-white dark:bg-[#111010] p-4 w-full h-1/4 rounded-b-lg border-1 border-black border-t">
-                        <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-                        <p className="text-gray-700 text-sm dark:text-gray-400">{project.description}</p>
+                    <div className="bg-white dark:bg-[#111010] p-4 w-full h-1/4 rounded-b-lg border-1 border-black border-t transition-all duration-500">
+                        <h2 className="text-xl text-black dark:text-white font-bold mb-2 duration-500">{project.title}</h2>
+                        <p className="text-gray-700 text-sm dark:text-gray-400 duration-500">{project.description}</p>
                     </div>
                 </div>
             </div>

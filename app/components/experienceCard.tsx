@@ -5,10 +5,10 @@ export function ExperienceCard(cardData: Experience) {
     return (
       <RevealOnScroll>
     <div className='mt-2 p-1'>
-      <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow-xl dark:shadow-[#555555] dark:bg-[#141414] dark:border-gray-200 ">
+      <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow-xl dark:shadow-[#555555] dark:bg-[#141414] dark:border-gray-200 text-black dark:text-white duration-500">
         <div className="ml-2 mb-6">
           <h3 className="text-lg font-semibold">{cardData.title}</h3>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400 duration-500">
             <a href={cardData.organizationLink} target="_blank" rel="noopener noreferrer" className="text-xl font-bold">
               <span className="link link-underline link-underline-black">
                 {cardData.organization}
