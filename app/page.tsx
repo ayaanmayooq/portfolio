@@ -22,9 +22,7 @@ export default function Page() {
                 <p>Always looking for opportunites to put my knowledge and skills to practical use.</p>
             </div>
 
-            <p className="mt-10 ml-1 text-2xl font-bold">Coming Soon</p>
-
-            <p className="mt-10 ml-1 text-2xl font-bold">Experience</p>
+            <p className="mt-10 mb-5 ml-1 text-2xl font-bold">Experience</p>
                 {data['experiences'].map((experience, index) => (
                     <ExperienceCard key={index} {...experience} />
                 ))}

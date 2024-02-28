@@ -54,8 +54,8 @@ export function ProjCard(project: Project) {
                     transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
                 }}
             >
-                <div className="pulse absolute -inset-2 rounded-lg bg-gradient-to-r from-gray-400 via-gray-400 to-gray-400 dark:from-gray-600 dark:via-gray-600 dark:to-gray-600 opacity-75 blur-xl" />
-                <div className="relative flex flex-col h-full w-full select-none items-center justify-center rounded-lg overflow-hidden duration-500 hover:scale-105">
+                <div className="pulse absolute -inset-2 rounded-lg bg-gradient-to-r from-gray-400 via-gray-400 to-gray-400 dark:from-yellow-600 dark:via-orange-600 dark:to-red-600 dark:opacity-10 dark:blur-lg opacity-75 blur-xl" />
+                <div className="relative flex flex-col h-full w-full select-none items-center justify-center rounded-lg overflow-hidden duration-500 hover:scale-105 border border-zinc-200 hover:border-zinc-600 dark:border-zinc-700 hover:dark:border-zinc-200">
                     <img
                         src={project.imageUrl}
                         className="rounded-t-lg object-cover w-full h-3/4"
