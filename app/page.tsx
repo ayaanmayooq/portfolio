@@ -4,10 +4,11 @@ import { ExperienceCard } from '@/app/components/experienceCard';
 import { TextEncrypted } from '@/app/components/encryptText';
 import data from '@/public/data.json'
 
+
 export default function Page() {
 
     return (
-        
+
         <section className="animate-move-up-fade-in">
             <div className="flex flex-col ml-1">
                 <p>Hi, my name is</p>
@@ -29,6 +30,5 @@ export default function Page() {
 
                 {/* <VerticalTabs></VerticalTabs>*/}
         </section>
-        
     );
 }

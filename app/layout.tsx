@@ -10,6 +10,9 @@ import { Navbar } from '@/app/components/nav'
 import { Footer } from '@/app/components/footer';
 import { usePathname } from 'next/navigation';
 import { Providers } from './providers';
+import { SplashScreen } from './components/splash';
+import path from 'path';
+import { useEffect, useState } from 'react';
 
 export default function RootLayout({
     children,
@@ -17,18 +20,40 @@ export default function RootLayout({
     children: React.ReactNode
     }) {
     const pathname = usePathname();
+    const isHome = pathname == '/';
+    const [isAnimationInProgress, setIsAnimationInProgress] = useState(true);
+
+    useEffect(() => {
+        if (isAnimationInProgress) {
+            document.body.style.overflow = 'hidden'; // Disable scrolling during animation
+        } else {
+            document.body.style.overflow = 'visible'; // Re-enable scrolling after animation
+        }
+    }, [isAnimationInProgress]);
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setIsAnimationInProgress(false);
+        }, 3000);
+
+        return () => {
+            clearTimeout(timeoutId);
+            document.body.style.overflow = 'visible'; // Ensure scrolling is re-enabled on unmount
+        };
+    }, []);
+
     return (
         <html lang="en" suppressHydrationWarning>
-{/*            <Head>
-                <link rel="shortcut icon" href="./favicon.ico" />
-            </Head>*/}
 
-            <body className={`${GeistSans.className} bg-white dark:bg-[#121212] dark:text-white antialiased max-w-3xl h-screen flex flex-col md:flex-row mx-4 lg:mx-auto transition-all duration-500`}>
-                <main className="flex-auto min-w-0 h-full flex flex-col px-2 md:px-0">
-                    {/* Navbar */}
-                    <Navbar />
-                
-                    
+            <body className={`${GeistSans.className} bg-white dark:bg-[#121212] dark:text-white antialiased max-w-3xl h-screen flex flex-col md:flex-row lg:mx-auto transition-all duration-500`}>
+                {isAnimationInProgress && isHome ? (
+                    <SplashScreen/>
+                ):(
+                <main className="flex-auto min-w-0 h-full flex flex-col md:px-0">
+                {/* <div className="reveal-line-up"></div>
+                <div className="reveal-line-down"></div> */}
+
+                    <Navbar />                
                     <div className="mt-40">
                         {children}
                     </div>
@@ -40,10 +65,9 @@ export default function RootLayout({
                         <Footer />
                     </div>
                 </main>
-
+                )}
+          
             </body>
-
-            
 
         </html>
     )

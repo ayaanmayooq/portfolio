@@ -36,11 +36,11 @@ export function Navbar() {
                                     py-1 px-2 duration-500 ${pathname === path ? 'font-bold text-lg' : ''}`}
                                 >
                                     {name == 'resume' ? (
-                                        <a href={path} target="_blank" rel="noopener noreferrer" className='m-auto'>
+                                        <a href={path} target="_blank" rel="noopener noreferrer" className=''>
                                             {name}
                                         </a>
                                     ) : (
-                                        <Link href={path} className='m-auto'>
+                                        <Link href={path} className=''>
                                             {name}
                                         </Link>
                                     )}

@@ -1,0 +1,112 @@
+.preloader {
+    height: 100vh;
+    width: 100%;
+    color: white;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.preloader .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 100px;
+    font-weight: 800;
+    overflow: hidden;
+}
+
+  @keyframes textAnimation {
+    0% {
+      letter-spacing: 0.25em; /* Initial letter spacing */
+    }
+    100% {
+      letter-spacing: 0; /* Final letter spacing */
+    }
+  }
+  
+  .animated-text {
+    animation: textAnimation 3s ease-in-out;
+    white-space: nowrap;
+  }
+
+  /* Splash Animations */
+
+@keyframes blockAnimationUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+}
+
+@keyframes blockAnimationDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+    70% {
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateY(30%);
+        opacity: 0;
+
+    }
+}
+
+
+
+.reveal-line-up, .reveal-line-down {
+    z-index: 55;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: #000; /* Black color */
+    
+}
+
+.reveal-line-up {
+    height: 52%;
+    top: 0;
+    animation: blockAnimationUp 3s ease-in-out forwards;
+    
+}
+
+.reveal-line-down {
+    height: 48%;
+    bottom: 0;
+    animation: blockAnimationDown 3s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 4s ease-in forwards;
+}
