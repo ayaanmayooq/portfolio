@@ -9,8 +9,8 @@ export default function Page() {
 
     return (
 
-        <section className="animate-move-up-fade-in">
-            <div className="flex flex-col ml-1">
+        <section className="animate-move-up-fade-in flex flex-col">
+            <div className="flex flex-col">
                 <p>Hi, my name is</p>
                 <div className="py-1 text-4xl font-bold">
                     <TextEncrypted text="Ayaan Mayooq" />

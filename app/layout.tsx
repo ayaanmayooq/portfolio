@@ -9,7 +9,7 @@ import { GeistMono } from 'geist/font/mono';
 import { Navbar } from '@/app/components/nav'
 import { Footer } from '@/app/components/footer';
 import { usePathname } from 'next/navigation';
-import { Providers } from './providers';
+import { ThemeProvider } from './components/theme-provider';
 import { SplashScreen } from './components/splash';
 import path from 'path';
 import { useEffect, useState } from 'react';
@@ -34,7 +34,7 @@ export default function RootLayout({
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             setIsAnimationInProgress(false);
-        }, 3000);
+        }, 0);
 
         return () => {
             clearTimeout(timeoutId);
@@ -45,13 +45,20 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
 
+            <ThemeProvider
+                attribute="class"
+                defaultTheme="system"
+                enableSystem>
+
             <body className={`${GeistSans.className} bg-white dark:bg-[#121212] dark:text-white antialiased max-w-3xl h-screen flex flex-col md:flex-row lg:mx-auto transition-all duration-500`}>
-                {isAnimationInProgress && isHome ? (
+                {/* {isAnimationInProgress && isHome ? (
                     <SplashScreen/>
-                ):(
+                ):( */}
                 <main className="flex-auto min-w-0 h-full flex flex-col md:px-0">
-                {/* <div className="reveal-line-up"></div>
-                <div className="reveal-line-down"></div> */}
+                <div className="reveal-line-up border-b border-zinc-400">
+                    </div>
+                <div className="reveal-line-down border-t border-zinc-400">
+                </div>
 
                     <Navbar />                
                     <div className="mt-40">
@@ -61,13 +68,15 @@ export default function RootLayout({
                     <div className="m-auto"></div>
 
                     <div className="flex flex-col justify-center">
-                        <hr className="mt-20 w-full border-3" />
+                        <hr className="mt-20 w-full border-3 border-red" />
                         <Footer />
                     </div>
                 </main>
-                )}
+                {/* )} */}
           
             </body>
+
+            </ThemeProvider>
 
         </html>
     )

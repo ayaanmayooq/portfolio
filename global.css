@@ -72,3 +72,51 @@
     break-inside: avoid-column; /* Prevent breaking across columns */
     margin-bottom: 1rem; /* Spacing between items */
 }
+
+  /* Splash Animations */
+
+  @keyframes blockAnimationUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+}
+
+@keyframes blockAnimationDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 1;
+
+    }
+}
+
+.reveal-line-up, .reveal-line-down {
+    z-index: 55;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: #121212; /* Black color */
+    
+}
+
+.reveal-line-up {
+    height: 52%;
+    top: 0;
+    animation: blockAnimationUp 1s ease-in-out forwards;
+    
+}
+
+.reveal-line-down {
+    height: 48%;
+    bottom: 0;
+    animation: blockAnimationDown 1s ease-in-out forwards;
+}
