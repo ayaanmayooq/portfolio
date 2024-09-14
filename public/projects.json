@@ -1,5 +1,20 @@
 [
   {
+    "imageUrl": "/llm-verification.png",
+    "title": "Neuro-Symbolic Program Synthesis with LLMs and Formal Methods",
+    "slug": "llm-verification",
+    "description": "Combining AI and Formal Verification for Accurate Program Synthesis",
+    "technologies": [ "Python", "PyGame", "SMT Solver", "Z3", "GPT-3.5", "GPT-4" ],
+    "githubLink": "https://github.com/ayaanmayooq/LLM-verification-CEGIS",
+    "content": [
+      "Developed a neuro-symbolic approach integrating large language models (LLMs) and formal verification for program synthesis.",
+      "Implemented a mutation engine and Counterexample-Guided Inductive Synthesis (CeGIS) to refine program generation accuracy.",
+      "Used LLMs to generate candidate programs from specifications, and verified their correctness using a custom Python verification engine.",
+      "Validated the system using the BlocksWorld environment, improving solve rate and efficiency with the addition of mutation-based local search.",
+      "Showcased potential for expanding the framework to more complex program synthesis tasks in the future."
+    ]
+  },
+  {
     "imageUrl": "/exaimination.png",
     "title": "exAImination",
     "slug": "exaimination",

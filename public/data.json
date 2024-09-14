@@ -1,10 +1,22 @@
 {
   "experiences": [
     {
+      "title": "Data Science Intern",
+      "organization": "MultiPlan Corporation",
+      "organizationLink": "https://www.multiplan.us/",
+      "date": "Jun 2024 - Present",
+      "points": [
+        "Delivered a high-impact predictive model, by leveraging a custom loss function based on ordered probability, to improve appeal forecasting and negotiation, generating additional 12% savings for the clients translating to $8,780,000",
+        "Developed a framework for feasible big data model training on neural networks and gradient boosting algorithms, optimizing GPU-based matrix computations, resulting in a 150X speedup reducing training time from 50 mins to 2 secs.",
+        "Automated API workflows, streamlining data collection and processing for 9,000,000 claims saving the team 40 hours of work per month by eliminating manual data retrieval tasks and enhancing training data for modelling."
+      ],
+      "skills": [ "AI/ML", "PyTorch", "Oracle", "LightGBM", "CUDA" ]
+    },
+    {
       "title": "Teaching Assistant",
       "organization": "MSU",
       "organizationLink": "https://msu.edu/",
-      "date": "Aug 2022 - Present",
+      "date": "Aug 2022 - May 2024",
       "points": [
         "Courses: Computer Vision, Computer Networks, Matrix Algebra with Computational Applications.",
         "Guided academic success of students by conducting one-on-one mentorship sessions and collaborated with professors and TAs to enhance the course experience."
